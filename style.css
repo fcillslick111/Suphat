@@ -1,21 +1,26 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+/* ปรับสีพื้นหลังของ Navbar */
+.navbar {
+    background-color: #343a40;
 }
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+
+/* ปรับสไตล์เมนู */
+.nav-link {
+    color: white !important;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
 }
-section {
-    margin: 20px;
+
+/* เอฟเฟกต์เวลาเอาเมาส์ไปชี้ */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
-footer {
-    background-color: #222;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+/* เมนูที่ถูกเลือก (Active) */
+.nav-link.active,
+.nav-link:focus {
+    background-color: #ff4545 !important; /* สีเหลือง */
+    color: #000 !important;
+    border-radius: 5px;
 }

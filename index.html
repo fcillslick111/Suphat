@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>บาส - แนะนำตัวเอง</title>
+    <title>หน้าแรก</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>สวัสดี! ผมชื่อบาส</h1>
-        <p>นักพัฒนาเว็บ & สนใจเทคโนโลยีโรงงาน</p>
-    </header>
 
-    <section>
-        <h2>เกี่ยวกับผม</h2>
-        <p>ผมชอบพัฒนาเว็บ และกำลังเรียนรู้ Laravel และ Web Scraping</p>
-    </section>
+<div id="navbar-container"></div> <!-- โหลด Navbar มาตรงนี้ -->
 
-    <footer>
-        <p>ติดต่อผมที่ <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    </footer>
+<div class="container text-center mt-5">
+    <h1>ยินดีต้อนรับสู่หน้าแรก</h1>
+    <p>นี่คือเว็บไซต์ของฉัน</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // โหลด Navbar จาก navbar.html
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar-container").innerHTML = data;
+        });
+</script>
+
 </body>
 </html>
