@@ -173,10 +173,73 @@
     }
 }
 
+
+/* about */
+.profile-img {
+    width: 300px;  /* ปรับขนาดรูปให้ใหญ่ขึ้นอีก */
+    height: 300px;
+    object-fit: cover;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.about-text {
+    margin-left: 20px;
+}
+.services-section .service-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-section .service-item i {
+    font-size: 50px; /* ปรับขนาดไอคอน */
+}
+
+.services-section h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.services-section p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* จัดการให้ไอคอนอยู่ในแถวเดียวกัน */
+@media (min-width: 768px) {
+    .services-section .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services-section .col-md-3 {
+        flex: 1;
+        padding: 0 15px; /* เพิ่มระยะห่างระหว่างแต่ละคอลัมน์ */
+    }
+}
+
+@media (max-width: 767px) {
+    .services-section .service-item {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .services-section .service-item {
+        margin-bottom: 20px;
+    }
+}
+
+
 /* ----- สำหรับมือถือเล็ก (ต่ำกว่า 576px) ----- */
 @media (max-width: 575.98px) {
     .hero-section {
-        height: 86vh;
+        height: 88vh;
         padding-right: 5%;
     }
 
@@ -201,7 +264,7 @@
 /* ----- สำหรับแท็บเล็ต (576px - 991px) ----- */
 @media (min-width: 576px) and (max-width: 991.98px) {
     .hero-section {
-        height: 86vh;
+        height: 88vh;
         padding-right: 8%;
     }
 
@@ -226,7 +289,7 @@
 /* ----- สำหรับจอคอมทั่วไป (992px - 1199px) ----- */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .hero-section {
-        height: 86vh;
+        height: 88vh;
         padding-right: 10%;
     }
 
@@ -251,7 +314,7 @@
 /* ----- สำหรับจอคอมใหญ่ (1200px ขึ้นไป) ----- */
 @media (min-width: 1200px) {
     .hero-section {
-        height: 86vh;
+        height: 88vh;
     }
 
     .hero-text h1 {
