@@ -176,7 +176,7 @@
 /* ----- สำหรับมือถือเล็ก (ต่ำกว่า 576px) ----- */
 @media (max-width: 575.98px) {
     .hero-section {
-        height: 88vh;
+        height: 86vh;
         padding-right: 5%;
     }
 
@@ -201,7 +201,7 @@
 /* ----- สำหรับแท็บเล็ต (576px - 991px) ----- */
 @media (min-width: 576px) and (max-width: 991.98px) {
     .hero-section {
-        height: 88vh;
+        height: 86vh;
         padding-right: 8%;
     }
 
@@ -226,7 +226,7 @@
 /* ----- สำหรับจอคอมทั่วไป (992px - 1199px) ----- */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .hero-section {
-        height: 88vh;
+        height: 86vh;
         padding-right: 10%;
     }
 
@@ -251,7 +251,7 @@
 /* ----- สำหรับจอคอมใหญ่ (1200px ขึ้นไป) ----- */
 @media (min-width: 1200px) {
     .hero-section {
-        height: 88vh;
+        height: 86vh;
     }
 
     .hero-text h1 {
