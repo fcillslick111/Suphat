@@ -17,10 +17,17 @@
     border-radius: 5px;
 }
 
-/* เมนูที่ถูกเลือก (Active) */
-.nav-link.active,
-.nav-link:focus {
-    background-color: #ff4545 !important; /* สีเหลือง */
-    color: #000 !important;
-    border-radius: 5px;
+
+/* เปลี่ยนสีพื้นหลังของ Navbar */
+.navbar {
+    background-color: #343a40; /* สีดำ */
+}
+
+/* เปลี่ยนสีของลิงก์ใน Navbar */
+.navbar-nav .nav-link {
+    color: white !important; /* เปลี่ยนให้ข้อความในเมนูเป็นสีขาว */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa !important; /* สีขาวเมื่อ hover */
 }
