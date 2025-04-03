@@ -38,7 +38,7 @@
 
 /* Hero Section */
 .hero-section {
-    background-image: url('img/my.jpg');
+    background-image: url('my.jpg');
     background-size: cover;
     background-position: center 1px;
     height: 100vh;
