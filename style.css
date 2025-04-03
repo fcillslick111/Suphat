@@ -179,6 +179,7 @@
     width: 300px;  /* ปรับขนาดรูปให้ใหญ่ขึ้นอีก */
     height: 300px;
     object-fit: cover;
+    margin-bottom: 20px;    /* เพิ่มระยะห่างด้านล่าง */
 }
 
 .about-content {
@@ -186,6 +187,9 @@
     align-items: center;
     justify-content: center;
     text-align: left;
+    flex-wrap: wrap; /* เมื่อหน้าจอเล็กลงจะ wrap เนื้อหา */
+    
+
 }
 .about-text {
     margin-left: 20px;
@@ -328,5 +332,20 @@
     .hero-text a {
         font-size: 1.2rem;
         padding: 14px 28px;
+    }
+}
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* รูปภาพจะอยู่ด้านบนข้อความ */
+        align-items: center; /* จัดข้อความให้ตรงกลาง */
+    }
+
+    .about-text {
+        margin-left: 0; /* ปรับระยะห่างให้ข้อความตรงกลางเมื่อรูปอยู่ด้านบน */
+        text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+    }
+
+    .profile-img {
+        margin-bottom: 15px; /* ให้รูปมีระยะห่างจากข้อความเล็กน้อย */
     }
 }
