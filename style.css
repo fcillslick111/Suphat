@@ -14,3 +14,8 @@
 .navbar-nav .nav-link:hover {
     color: #f8f9fa !important; /* สีขาวเมื่อ hover */
 }
+/* เพิ่ม z-index เพื่อให้ Navbar อยู่ด้านหน้า */
+.navbar {
+    position: relative; /* ต้องใช้ position กำหนดตำแหน่ง */
+    z-index: 1000; /* ค่า z-index ที่สูงให้ navbar อยู่ด้านหน้า */
+}
