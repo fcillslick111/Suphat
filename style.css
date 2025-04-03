@@ -1,21 +1,4 @@
-/* ปรับสีพื้นหลังของ Navbar */
-.navbar {
-    background-color: #343a40;
-}
 
-/* ปรับสไตล์เมนู */
-.nav-link {
-    color: white !important;
-    font-size: 18px;
-    padding: 10px 15px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* เอฟเฟกต์เวลาเอาเมาส์ไปชี้ */
-.nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-}
 
 
 /* เปลี่ยนสีพื้นหลังของ Navbar */
