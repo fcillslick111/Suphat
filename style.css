@@ -213,34 +213,64 @@
     color: #6c757d;
 }
 
-/* จัดการให้ไอคอนอยู่ในแถวเดียวกัน */
-@media (min-width: 768px) {
-    .services-section .row {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .services-section .col-md-3 {
-        flex: 1;
-        padding: 0 15px; /* เพิ่มระยะห่างระหว่างแต่ละคอลัมน์ */
-    }
-}
-
-@media (max-width: 767px) {
-    .services-section .service-item {
-        margin-bottom: 20px;
-    }
-}
-
-
-@media (max-width: 767px) {
-    .services-section .service-item {
-        margin-bottom: 20px;
-    }
+/* Portfolio Section */
+.portfolio-item {
+    position: relative; 
+    width: 100%;
+    height: 70vh;  /* ให้ความสูงเต็มหน้าจอ */
+    background-size: cover; /* ปรับขนาดภาพให้แสดงทั้งหมด */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+    background-position: center; /* จัดภาพให้อยู่ตรงกลาง */
+    display: flex; 
+    align-items: flex-end; /* ทำให้ข้อความอยู่ที่ด้านล่าง */
+    justify-content: center; 
+    margin-bottom: 30px; /* เพิ่มระยะห่างระหว่างแต่ละ portfolio item */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้กรอบรูป */
+    overflow: hidden; /* ป้องกันไม่ให้รูปเลยขอบ */
+     
 }
 
 
-/* ----- สำหรับมือถือเล็ก (ต่ำกว่า 576px) ----- */
+.portfolio-info {
+    position: absolute; /* ให้ข้อความอยู่ด้านบนสุดของกรอบ */
+    background: rgb(0, 0, 0,03);  /* พื้นหลังให้ดูมืดเพื่อให้ข้อความเด่น */
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    z-index: 1;  /* ให้ข้อความอยู่ด้านหน้า */
+
+}
+.portfolio-item:hover .portfolio-info {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* ข้อความใน Portfolio */
+.portfolio-info h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ff5733;
+}
+
+.portfolio-info p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6; /* เพิ่มระยะห่างระหว่างบรรทัด */
+}
+
+/* Social Icons */
+.social-icons a {
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px; /* ระยะห่างระหว่างไอคอน */
+}
+
+.social-icons a:hover {
+    color: #ff5733;
+    transform: scale(1.2); /* เพิ่มขนาดไอคอนเมื่อ hover */
+}
+/* ----- สำหรับมือถือ (ต่ำกว่า 576px) ----- */
 @media (max-width: 575.98px) {
     .hero-section {
         height: 88vh;
@@ -334,6 +364,32 @@
         padding: 14px 28px;
     }
 }
+
+/* ปรับการแสดงผลของ Portfolio ในมือถือ */
+@media (max-width: 767px) {
+    .portfolio-item {
+        height: 50vh; /* ลดความสูงของ portfolio item ให้พอดี */
+        max-height: 300px; /* จำกัดขนาดสูงสุด */
+        display: flex;
+    }
+
+    .portfolio-info {
+        padding: 15px;
+    }
+
+    .portfolio-info h4 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ----- การจัดการ Layout ของบริการในมือถือ ----- */
+@media (max-width: 767px) {
+    .services-section .service-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* ----- การจัดการ Layout สำหรับหน้า About ในมือถือ ----- */
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column; /* รูปภาพจะอยู่ด้านบนข้อความ */
@@ -347,5 +403,44 @@
 
     .profile-img {
         margin-bottom: 15px; /* ให้รูปมีระยะห่างจากข้อความเล็กน้อย */
+    }
+}
+
+/* ----- การจัดการไอคอนสังคมในมือถือ ----- */
+.social-icons a {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+    margin: 0 10px;  /* เพิ่มระยะห่างระหว่างไอคอน */
+}
+
+.social-icons a:hover {
+    color: #ff5733;
+}
+
+/* ----- การจัดตำแหน่งและขนาดไอคอนในมือถือ ----- */
+@media (max-width: 767px) {
+    .social-icons {
+        display: flex;
+        justify-content: center; /* จัดตำแหน่งไอคอนให้อยู่กลาง */
+        gap: 15px; /* ระยะห่างระหว่างไอคอน */
+        margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+    }
+
+    .social-icons a {
+        font-size: 30px;  /* ปรับขนาดไอคอนในมือถือให้ใหญ่ขึ้น */
+    }
+}
+
+/* ----- การจัด Layout ของบริการ (สำหรับจอขนาดใหญ่) ----- */
+@media (min-width: 768px) {
+    .services-section .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services-section .col-md-3 {
+        flex: 1;
+        padding: 0 15px; /* เพิ่มระยะห่างระหว่างแต่ละคอลัมน์ */
     }
 }

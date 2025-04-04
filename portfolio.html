@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ผลงาน</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,10 +19,74 @@
             })
             .catch(err => console.log('Error loading navbar:', err));
 </script>
-<div class="container text-center mt-5">
-    <h1>ผลงานของเรา</h1>
-    <p>นี่คือหน้าผลงาน</p>
+
+
+<!-- Portfolio Section -->
+<section class="portfolio-section py-5">
+    <div class="container">
+        
+        <div class="row">
+            <!-- Portfolio Item 1 -->
+            <div class="col-md-12 mb-4">
+                <div class="portfolio-item" style="background-image: url('project1.jpg');">
+                    <div class="portfolio-info">
+                        <h4>ระบบจัดการอะไหล่</h4>
+                        <p>มีฟังก์ชันการ เพิ่ม, ลบ, แก้ไข และ คำนวณสต๊อก โดยจะแสดงสถานะการขาดแคลน หากอะไหล่มีจำนวนไม่พอ ช่วยให้การจัดการสต๊อกเป็นไปอย่างมีประสิทธิภาพ.</p>
+                    </div>
+                </div>
+            </div>
+
+           <div class="col-md-12 mb-4">
+                <div class="portfolio-item" style="background-image: url('project2.jpg');">
+                    <div class="portfolio-info">
+                        <h4>ระบบการจองต้นกล้าปาล์ม</h4>
+                        <p>มีฟังก์ชันการเก็บข้อมูลบัตรประชาชน ของผู้จอง , เลือกชนิดปาล์ม และคำนวณยอดเงินที่ต้องจ่าย , ออกบิล สำหรับการจอง</p>
+                    </div>
+                </div>
+            </div>
+            <!--  <div class="col-md-12 mb-4"> 
+
+            <div class="col-md-12 mb-4">
+                <div class="portfolio-item" style="background-image: url('my.jpg');">
+                    <div class="portfolio-info">
+                        <h4>Project Three</h4>
+                        <p>A brief description of the project. Technologies used: WordPress, jQuery, Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                  <div class="col-md-12 mb-4">
+                    <div class="portfolio-item" style="background-image: url('project4.jpg');">
+                        <div class="portfolio-info">
+                            <h4>Project 4</h4>
+                            <p>A brief description of the project. Technologies used: WordPress, jQuery, Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+  <!-- Pagination -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="#">Previous</a>
+        </li>
+        <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">1</a>
+        </li>
+        <!-- <li class="page-item">
+            <a class="page-link" href="#">2</a>
+        </li>
+       -->
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
 </div>
+</section>
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
